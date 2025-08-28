@@ -24,20 +24,16 @@ for (const i of loveIcon) {
 
 
 
-//! Call Section
+//! Call Section & Call History
 
 const date = new Date();
 let nowTime = date.toLocaleTimeString();
-// console.log(nowTime);
-
-
 
 const serviceTitle = document.querySelectorAll(".service-title");
 let serviceTitleList = [];
 for (const z of serviceTitle) {
     serviceTitleList.push(z.innerText);
 }
-
 
 const serviceName = document.querySelectorAll('.service-name');
 const listofservice = [];
@@ -51,6 +47,13 @@ for (const numberlist of numberCopy) {
     listofnumber.push(numberlist.innerHTML)
 }
 
+function CallHistoryClear(){
+    let clearHistory = "";
+    document.getElementById("history-list").innerHTML = clearHistory;
+}
+
+
+
 let b = 100;
 function callOne() {
     b = b - 20;
@@ -60,7 +63,7 @@ function callOne() {
 
         const historyList = document.getElementById("history-list");
         const div = document.createElement('div')
-        div.innerHTML =`
+        div.innerHTML = `
          <div class="flex justify-between items-center p-4 rounded-sm bg-gray-50 ">
                         <div>
                             <p class="font-bold">${serviceTitleList[0]}</p>
@@ -76,7 +79,6 @@ function callOne() {
     }
 
 }
-
 function callTwo() {
     b = b - 20;
     if (b >= 0) {
@@ -84,7 +86,7 @@ function callTwo() {
         document.getElementById("star-number").innerText = b;
         const historyList = document.getElementById("history-list");
         const div = document.createElement('div')
-        div.innerHTML =`
+        div.innerHTML = `
          <div class="flex justify-between items-center p-4 rounded-sm bg-gray-50 ">
                         <div>
                             <p class="font-bold">${serviceTitleList[1]}</p>
@@ -105,7 +107,7 @@ function callThree() {
         document.getElementById("star-number").innerText = b;
         const historyList = document.getElementById("history-list");
         const div = document.createElement('div')
-        div.innerHTML =`
+        div.innerHTML = `
          <div class="flex justify-between items-center p-4 rounded-sm bg-gray-50 ">
                         <div>
                             <p class="font-bold">${serviceTitleList[2]}</p>
@@ -126,7 +128,7 @@ function callFour() {
         document.getElementById("star-number").innerText = b;
         const historyList = document.getElementById("history-list");
         const div = document.createElement('div')
-        div.innerHTML =`
+        div.innerHTML = `
          <div class="flex justify-between items-center p-4 rounded-sm bg-gray-50 ">
                         <div>
                             <p class="font-bold">${serviceTitleList[3]}</p>
@@ -147,7 +149,7 @@ function callFive() {
         document.getElementById("star-number").innerText = b;
         const historyList = document.getElementById("history-list");
         const div = document.createElement('div')
-        div.innerHTML =`
+        div.innerHTML = `
          <div class="flex justify-between items-center p-4 rounded-sm bg-gray-50 ">
                         <div>
                             <p class="font-bold">${serviceTitleList[4]}</p>
@@ -168,7 +170,7 @@ function callSix() {
         document.getElementById("star-number").innerText = b;
         const historyList = document.getElementById("history-list");
         const div = document.createElement('div')
-        div.innerHTML =`
+        div.innerHTML = `
          <div class="flex justify-between items-center p-4 rounded-sm bg-gray-50 ">
                         <div>
                             <p class="font-bold">${serviceTitleList[5]}</p>
@@ -189,7 +191,7 @@ function callSeven() {
         document.getElementById("star-number").innerText = b;
         const historyList = document.getElementById("history-list");
         const div = document.createElement('div')
-        div.innerHTML =`
+        div.innerHTML = `
          <div class="flex justify-between items-center p-4 rounded-sm bg-gray-50 ">
                         <div>
                             <p class="font-bold">${serviceTitleList[6]}</p>
@@ -210,7 +212,7 @@ function callEight() {
         document.getElementById("star-number").innerText = b;
         const historyList = document.getElementById("history-list");
         const div = document.createElement('div')
-        div.innerHTML =`
+        div.innerHTML = `
          <div class="flex justify-between items-center p-4 rounded-sm bg-gray-50 ">
                         <div>
                             <p class="font-bold">${serviceTitleList[7]}</p>
@@ -231,7 +233,7 @@ function callNine() {
         document.getElementById("star-number").innerText = b;
         const historyList = document.getElementById("history-list");
         const div = document.createElement('div')
-        div.innerHTML =`
+        div.innerHTML = `
          <div class="flex justify-between items-center p-4 rounded-sm bg-gray-50 ">
                         <div>
                             <p class="font-bold">${serviceTitleList[8]}</p>
@@ -259,12 +261,14 @@ function copyOne() {
     document.getElementById("copy-count").innerText = copyNumberNow++;
 }
 
+
 function copyTwo() {
     alert(`Number Copy: ${listofnumber[1]}`);
     navigator.clipboard.writeText(listofnumber[1]);
     document.getElementById("copy-count").innerText = copyNumberNow++;
 
 }
+
 
 function copyThree() {
     alert(`Number Copy: ${listofnumber[2]}`);
@@ -312,8 +316,6 @@ function copyEight() {
     document.getElementById("copy-count").innerText = copyNumberNow++;
 
 }
-
-
 function copyNine() {
     alert(`Number Copy: ${listofnumber[8]}`);
     navigator.clipboard.writeText(listofnumber[8]);
