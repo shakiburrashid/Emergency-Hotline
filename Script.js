@@ -1,13 +1,13 @@
 
 // ! Love Section
 {
-const loveIcon = document.querySelectorAll('.love-count');
-let a = 0;
-for (const i of loveIcon) {
-    i.addEventListener('click', () => {
-        document.getElementById("love-number").innerText = ++a;
-    })
-}
+    const loveIcon = document.querySelectorAll('.love-count');
+    let a = 0;
+    for (const i of loveIcon) {
+        i.addEventListener('click', () => {
+            document.getElementById("love-number").innerText = ++a;
+        })
+    }
 
 
 
@@ -15,7 +15,7 @@ for (const i of loveIcon) {
 
 
 //! Call Section
-{
+
 const serviceName = document.querySelectorAll('.service-name');
 const listofservice = [];
 for (const serviceNameList of serviceName) {
@@ -112,8 +112,90 @@ function callNine() {
     }
 }
 
+
+
+
+//! Copy Button Section
+let copyNumberNow = 1;
+
+
+function copyOne() {
+    alert(`Number Copy: ${listofnumber[0]}`);
+    navigator.clipboard.writeText(listofnumber[0]);
+    document.getElementById("copy-count").innerText = copyNumberNow++;
+}
+
+function copyTwo() {
+    alert(`Number Copy: ${listofnumber[1]}`);
+    navigator.clipboard.writeText(listofnumber[1]);
+    document.getElementById("copy-count").innerText = copyNumberNow++;
+
+}
+
+function copyThree() {
+    alert(`Number Copy: ${listofnumber[2]}`);
+    navigator.clipboard.writeText(listofnumber[2]);
+    document.getElementById("copy-count").innerText = copyNumberNow++;
+
 }
 
 
-//! Copy Button Matter
-//number-copy
+function copyFour() {
+    alert(`Number Copy: ${listofnumber[3]}`);
+    navigator.clipboard.writeText(listofnumber[3]);
+    document.getElementById("copy-count").innerText = copyNumberNow++;
+
+}
+
+
+function copyFive() {
+    alert(`Number Copy: ${listofnumber[4]}`);
+    navigator.clipboard.writeText(listofnumber[4]);
+    document.getElementById("copy-count").innerText = copyNumberNow++;
+
+}
+
+
+function copySix() {
+    alert(`Number Copy: ${listofnumber[5]}`);
+    navigator.clipboard.writeText(listofnumber[5]);
+    document.getElementById("copy-count").innerText = copyNumberNow++;
+
+}
+
+
+function copySeven() {
+    alert(`Number Copy: ${listofnumber[6]}`);
+    navigator.clipboard.writeText(listofnumber[6]);
+    document.getElementById("copy-count").innerText = copyNumberNow++;
+
+}
+
+
+function copyEight() {
+    alert(`Number Copy: ${listofnumber[7]}`);
+    navigator.clipboard.writeText(listofnumber[7]);
+    document.getElementById("copy-count").innerText = copyNumberNow++;
+
+}
+
+
+function copyNine() {
+    alert(`Number Copy: ${listofnumber[8]}`);
+    navigator.clipboard.writeText(listofnumber[8]);
+    document.getElementById("copy-count").innerText = copyNumberNow++;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
