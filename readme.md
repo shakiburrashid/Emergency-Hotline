@@ -9,14 +9,14 @@ getElementsByClassName = It selecte specific class and not unique. And return HT
 querySelector = It select id,class tag like css selector, based on match first element. And return single element object. 
 querySelectorAll = It is like querySelector but  it's all elements can select.And returns a NodeList.
 
----
+
 
 2) How do you create and insert a new element into the DOM?
 Answer: First use (if yoy create div tag) 
  document.createElement("div");
 div.innerHtml = ``
 
----
+
 
 3) What is Event Bubbling and how does it work?
 
