@@ -15,7 +15,7 @@
 - **Website name & logo** on the left as Figma
 - **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
 
----
+
 
 ### 2. Hero Section
 
