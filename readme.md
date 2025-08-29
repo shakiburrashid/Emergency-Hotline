@@ -37,7 +37,7 @@ Event delegation is useful mainly for three reasons:
 
 5) What is the difference between preventDefault() and stopPropagation() methods?
 
-*** preventDefault()** is the default action of an element from happening. And it does not stop the event from bubbling (propagation continues).
+**preventDefault()** is the default action of an element from happening. And it does not stop the event from bubbling (propagation continues).
 
 **stopPropagation()** is stops the event from bubbling up (or trickling down, if using capture phase).
 The default action still happens unless call preventDefault().
